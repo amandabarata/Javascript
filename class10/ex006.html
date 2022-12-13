@@ -18,14 +18,17 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area">
         Interact...
     </div>
+    
 
     <script>
 
 var area = document.getElementById('area')
-
+area.addEventListener('click', clicar)
+area.addEventListener('mouseenter', entrar)
+area.addEventListener('mouseout', sair)
 
 
         function clicar() {
