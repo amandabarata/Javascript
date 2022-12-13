@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Steps with DOM</title>
+    <style>
+        body {
+            background-color: rgb(48, 16, 136);
+            color: white;
+            font: 18pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Starting to use DOM!</h1>
+    <p>Here is the result</p>
+    <p>Learning how to use <strong>DOM</strong> in Javascript</p>
+    <div class="msg">Click on me</div>
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p') [1]
+        p1.style.color = 'yellow'
+        corpo.style.background = 'black'
+        alert(p1.innerText)
+        /*var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = ('Pqp hein, Guanabara é foda!')*/
+        var d = document.querySelector('div.msg')
+        d.style.color ='purple'
+
+    </script>
+    
+
+</body>
+</html>
