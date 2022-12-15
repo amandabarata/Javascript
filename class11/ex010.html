@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMT</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        strong {
+            color: yellow;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Fine System</h1>
+
+    Car speed: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Check" onclick="calculate()">
+    <div id="res">
+
+    </div>
+
+    <script>
+      function calculate() {
+        var txtv = document.getElementById('txtvel')
+        var res = document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p>Your current speed is <strong>${vel} Km/h.</strong></p>`
+        if (vel > 60) {
+            res.innerHTML += `<p>You are <strong>FINED </strong>for speeding!`
+        }
+        res.innerHTML += `<p>Always drive with safety belt!</p>`
+      }
+    </script>
+  </body>
+</html>
