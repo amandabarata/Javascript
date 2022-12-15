@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nacionality</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        strong {
+            background-color: yellow;
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Your Nacionality</h1>
+
+    Insert your country: <input type="text" name="nac" id="nac">
+    <input type="button" value="Click" onclick="verify()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function verify() {
+            var naci = document.querySelector('input#nac')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>Born in ${nac.value}</p>`
+
+            if (nac.value == 'Brazil') { 
+                res.innerHTML += `<p>You are brazilian <strong>Penta Champion</strong>, congrats!!</p>`
+        }  else {
+            res.innerHTML += `<p>You are foreigner</p>`
+        }
+
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
+
