@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age verifier</title>
+    <title>Age verifyer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
 
-        <h1>Title</h1>
+        <h1>Age verifyer</h1>
         
     </header>
 
     <section>
 
         <div>
-            Testing...
+
+        <p>Birth year:
+            <input type="number" name="txtyear" id="txtyear" min="0" max="100">
+        </p>
+
+        <p>Gender:
+            <input type="radio" name="radgender" id="male" checked>
+            <label for="male">Male</label>
+
+            <input type="radio" name="radgender" id="female">
+            <label for="female">Female</label>
+        </p>
+            
+        <p>
+            <input type="button" value="Check" onclick="verify()">
+        </p>
 
         </div>
-          Hello!
-        <div>
+         
+
+        <div id="res">
+
+            Fullfill the info above, in order to check the result!
 
         </div>
 
